@@ -1,0 +1,23 @@
+Insight,Value
+Total Income,60000.0
+Total Expense,50500.0
+Total Savings,1700.0
+Average Income,60000.0
+Average Expense,50500.0
+Average Savings,1700.0
+Highest Expense Day,"Date             2026-07-29
+Total_Expense       50500.0
+Name: 0, dtype: object"
+Lowest Expense Day,"Date             2026-07-29
+Total_Expense       50500.0
+Name: 0, dtype: object"
+Highest Savings Day,"Date       2026-07-29
+Savings        1700.0
+Name: 0, dtype: object"
+Lowest Savings Day,"Date       2026-07-29
+Savings        1700.0
+Name: 0, dtype: object"
+Biggest Spending Category,Food
+Savings Rate (%),2.83
+Saving Days,1
+Overspending Days,0
