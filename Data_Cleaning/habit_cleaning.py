@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Collection/Habit_Tracker.csv")
+df=pd.read_csv("Data_Collection/Habit_Tracker.csv")
 
 cols=["Medition_Minutes", "Gym_Minutes", "Coding_Hours", "Reading_Minutes", "Journaling_Minutes"]
 
@@ -40,5 +40,5 @@ df.loc[mask, "Journaling_Minutes"] = df["Journaling_Minutes"].median()
 df=df.reset_index(drop=True)
 
 
-df.to_csv("Habit_cleaned.csv", index=False)
+df.to_csv("Data_Cleaning/Habit_cleaned.csv", index=False)
 print(df)

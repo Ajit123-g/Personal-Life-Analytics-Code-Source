@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Cleaning/Habit_cleaned.csv")
+df=pd.read_csv("Data_Cleaning/Habit_cleaned.csv")
 
 #Total Habit Time 
 df["Total_Habit_Time"]=(
@@ -33,7 +33,7 @@ df["Habit_Performance"]=pd.cut(
 
 
 df.to_csv(
-    "../Feature_Engineering/Habit_Feature_Engineering.csv",
+    "Feature_Engineering/Habit_Feature_Engineering.csv",
     index=False
 )
 

@@ -19,7 +19,6 @@ Data={
 }
 
 df=pd.DataFrame(Data)
-df.to_csv("Finance.csv", index=False)
 
 
 file_name="Finance.csv"

@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Cleaning/Finance_cleaned.csv")
+df=pd.read_csv("Data_Cleaning/Finance_cleaned.csv")
 
 #create Total Expenses
 df["Total_Expenses"]=(
@@ -36,6 +36,6 @@ df["Good_Financial_Day"]=(
 
 
 df.to_csv(
-    "../Feature_Engineering/Finance_Feature_Engineering.csv",
+    "Feature_Engineering/Finance_Feature_Engineering.csv",
     index=False
 )

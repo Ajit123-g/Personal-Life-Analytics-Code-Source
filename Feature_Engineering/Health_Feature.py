@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Cleaning/Health_cleaned.csv")
+df=pd.read_csv("Data_Cleaning/Health_cleaned.csv")
 
 #Create Sleep Category
 df["Sleep_Category"]=pd.cut(df["Sleep_Hours"], bins=[0, 5, 7, 9, 24], labels=[" VeryPoor", "Poor", "Good", "Oversleep"])
@@ -27,7 +27,7 @@ df["Healthy_Day"]=(
 )
 
 df.to_csv(
-    "../Feature_Engineering/Health_Feature_Engineering.csv",
+    "Feature_Engineering/Health_Feature_Engineering.csv",
     index=False
 )
 

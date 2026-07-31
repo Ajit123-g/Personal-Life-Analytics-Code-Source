@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-df=pd.read_csv("../Feature_Engineering/Finance_Feature_Engineering.csv")
+df=pd.read_csv("Feature_Engineering/Finance_Feature_Engineering.csv")
 df["Date"]=datetime.now().date()
 
 #calculate basic statistics
@@ -101,6 +101,6 @@ insights_df = pd.DataFrame(
     columns=["Insight", "Value"]
 )
 
-insights_df.to_csv("../Insights_Generation/Finance_insights.csv", index=False)
+insights_df.to_csv("Insights_Generation/Finance_insights.csv", index=False)
 
 print("Insights saved successfully!")

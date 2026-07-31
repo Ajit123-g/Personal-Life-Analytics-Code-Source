@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Cleaning/Productivity_cleaned.csv")
+df=pd.read_csv("Data_Cleaning/Productivity_cleaned.csv")
 
 #Create date-based features
 df["Date"]=pd.to_datetime(df["Date"])
@@ -33,7 +33,7 @@ df["Productive_Day"]=(
 ).astype(int)
 
 df.to_csv(
-    "../Feature_Engineering/Productivity_Feature_Engineering.csv",
+    "Feature_Engineering/Productivity_Feature_Engineering.csv",
     index=False
 )
 

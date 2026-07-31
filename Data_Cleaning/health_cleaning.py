@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Collection/Health.csv")
+df=pd.read_csv("Data_Collection/Health.csv")
 
 cols=["Sleep_Hours", "Water_Intake", "Steps", "Weight", "Calories"]
 
@@ -91,6 +91,6 @@ for col in cols:
 df.reset_index(drop=True, inplace=True)
 
 
-df.to_csv("Health_cleaned.csv", index=False)
+df.to_csv("Data_Cleaning/Health_cleaned.csv", index=False)
 
 print(df)

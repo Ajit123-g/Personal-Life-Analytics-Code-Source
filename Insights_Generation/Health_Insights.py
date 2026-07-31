@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 
-df=pd.read_csv("../Feature_Engineering/Health_Feature_Engineering.csv")
+df=pd.read_csv("Feature_Engineering/Health_Feature_Engineering.csv")
 df["Date"]=datetime.now().date()
 
 #Calculate Overall Statistics
@@ -157,6 +157,6 @@ health_insights_df = pd.DataFrame(
     columns=["Insight", "Value"]
 )
 
-health_insights_df.to_csv("../Insights_Generation/Health_insights.csv")
+health_insights_df.to_csv("Insights_Generation/Health_insights.csv")
 
 print(health_insights_df)

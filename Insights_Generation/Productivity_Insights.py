@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Feature_Engineering/Productivity_Feature_Engineering.csv")
+df=pd.read_csv("Feature_Engineering/Productivity_Feature_Engineering.csv")
 
 #Calculate Overall Statistics
 Study_Hours_mean=df["Study_Hours"].mean()
@@ -113,4 +113,4 @@ insights_df = pd.DataFrame(
     columns=["Metric", "Value"]
 )
 
-insights_df.to_csv("../Insights_Generation/Productivity_insights.csv")
+insights_df.to_csv("Insights_Generation/Productivity_insights.csv")

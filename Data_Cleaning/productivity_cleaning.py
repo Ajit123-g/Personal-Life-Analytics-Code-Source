@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Collection/Productivity.csv")
+df=pd.read_csv("Data_Collection/Productivity.csv")
 
 # print(df.head())
 # print(df.info())
@@ -56,5 +56,5 @@ df=df.sort_values("Date")
 
 df=df.reset_index(drop=True)
 
-df.to_csv("Productivity_cleaned.csv", index=False)
+df.to_csv("Data_Cleaning/Productivity_cleaned.csv", index=False)
 print(df)

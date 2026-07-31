@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("../Data_Collection/Finance.csv")
+df=pd.read_csv("Data_Collection/Finance.csv")
 
 cols=["Income", "Food", "Shopping", "Transport", "Entertainment", "Savings", "Bill_Paid"]
 
@@ -27,5 +27,5 @@ columns=df.columns.str.strip()
 #reset index
 df=df.reset_index(drop=True)
 
-df.to_csv("Finance_cleaned.csv", index=False)
+df.to_csv("Data_Cleaning/Finance_cleaned.csv", index=False)
 print(df.describe())

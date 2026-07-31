@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df=pd.read_csv("../Data_Cleaning/Finance_cleaned.csv")
+df=pd.read_csv("Data_Cleaning/Finance_cleaned.csv")
 
 sns.set_style("whitegrid")
 
@@ -14,7 +14,7 @@ sns.histplot(df["Income"], bins=10, kde=True)
 plt.title("Income Distribution")
 plt.xlabel("Income")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Income_Histogram.png",
+plt.savefig("graphs/Finance/Income_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -25,7 +25,7 @@ sns.histplot(df["Shopping"], bins=10, kde=True)
 plt.title("Shopping Distribution")
 plt.xlabel("Shopping")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Shopping_Histogram.png",
+plt.savefig("graphs/Finance/Shopping_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -36,7 +36,7 @@ sns.histplot(df["Transport"], bins=10, kde=True)
 plt.title("Transport Distribution")
 plt.xlabel("Transport")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Transport_Histogram.png",
+plt.savefig("graphs/Finance/Transport_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -47,7 +47,7 @@ sns.histplot(df["Entertainment"], bins=10, kde=True)
 plt.title("Entertainment Distribution")
 plt.xlabel("Entertainment")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Entertainment_Histogram.png",
+plt.savefig("graphs/Finance/Entertainment_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -58,7 +58,7 @@ sns.histplot(df["Bill_Paid"], bins=10, kde=True)
 plt.title("Bill Paid Distribution")
 plt.xlabel("Bill_Paid")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Bill_Paid_Histogram.png",
+plt.savefig("graphs/Finance/Bill_Paid_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -69,7 +69,7 @@ sns.histplot(df["Savings"], bins=10, kde=True)
 plt.title("Savings Distribution")
 plt.xlabel("Savings")
 plt.ylabel("Count")
-plt.savefig("../graphs/Finance/Savings_Histogram.png",
+plt.savefig("graphs/Finance/Savings_Histogram.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -80,7 +80,7 @@ plt.show()
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Income"])
 plt.title("Income Box Plot")
-plt.savefig("../graphs/Finance/Income_boxplot.png",
+plt.savefig("graphs/Finance/Income_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -89,7 +89,7 @@ plt.show()
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Shopping"])
 plt.title("Water Intake Box Plot")
-plt.savefig("../graphs/Finance/Shopping_boxplot.png",
+plt.savefig("graphs/Finance/Shopping_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 
@@ -97,7 +97,7 @@ plt.savefig("../graphs/Finance/Shopping_boxplot.png",
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Transport"])
 plt.title("Transport Box Plot")
-plt.savefig("../graphs/Finance/Transport_boxplot.png",
+plt.savefig("graphs/Finance/Transport_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -106,7 +106,7 @@ plt.show()
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Entertainment"])
 plt.title("Entertainment Box Plot")
-plt.savefig("../graphs/Finance/Entertainment_boxplot.png",
+plt.savefig("graphs/Finance/Entertainment_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -115,7 +115,7 @@ plt.show()
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Bill_Paid"])
 plt.title("Bill Paid Box Plot")
-plt.savefig("../graphs/Finance/Bill_Paid_boxplot.png",
+plt.savefig("graphs/Finance/Bill_Paid_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -124,7 +124,7 @@ plt.show()
 plt.figure(figsize=(8,5))
 sns.boxplot(y=df["Savings"])
 plt.title("Savings Box Plot")
-plt.savefig("../graphs/Finance/Savings_boxplot.png",
+plt.savefig("graphs/Finance/Savings_boxplot.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -139,7 +139,7 @@ sns.scatterplot(
     data=df
 )
 plt.title("Income vs Savings")
-plt.savefig("../graphs/Finance/Income_vs_Savings.png",
+plt.savefig("graphs/Finance/Income_vs_Savings.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -152,7 +152,7 @@ sns.scatterplot(
     data=df
 )
 plt.title("Income vs Food")
-plt.savefig("../graphs/Finance/Income_vs_Food.png",
+plt.savefig("graphs/Finance/Income_vs_Food.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -165,7 +165,7 @@ sns.scatterplot(
     data=df
 )
 plt.title("Income vs Shopping")
-plt.savefig("../graphs/Finance/Income_vs_Shopping.png",
+plt.savefig("graphs/Finance/Income_vs_Shopping.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -179,7 +179,7 @@ sns.scatterplot(
     data=df
 )
 plt.title("Income vs Entertainment")
-plt.savefig("../graphs/Finance/Income_vs_Entertainment.png",
+plt.savefig("graphs/Finance/Income_vs_Entertainment.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -192,7 +192,7 @@ sns.scatterplot(
     data=df
 )
 plt.title("Income vs Transport")
-plt.savefig("../graphs/Finance/Income_vs_Transport.png",
+plt.savefig("graphs/Finance/Income_vs_Transport.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
@@ -203,7 +203,7 @@ sns.heatmap(df.corr(numeric_only=True),
             annot=True,
             cmap="coolwarm")
 plt.title("Correlation Heatmap")
-plt.savefig("../graphs/Habit_Tracker/Correlation_Heatmap.png",
+plt.savefig("graphs/Habit_Tracker/Correlation_Heatmap.png",
             dpi=300,
             bbox_inches="tight")
 plt.show()
